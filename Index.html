@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html >
+<head>
+ <script  language ="javascript" type="text/javascript">
+     var c = 0;
+     var s;
+     var f = 1;
+     function photoGallery() {
+
+         if (c % 30 == 0) {
+             document.getElementById('photo_gallery').src = "image/W1.jpeg";
+         }
+         if (c % 30 == 1) {
+
+             document.getElementById('photo_gallery').src = "image/W2.jpeg";
+         }
+
+         if (c % 30 == 2) {
+
+             document.getElementById('photo_gallery').src = "image/W3.jpeg";
+         }
+
+         if (c % 30 == 3) {
+
+             document.getElementById('photo_gallery').src = "image/W1.jpeg";
+         }
+
+         if (c % 30 == 4) {
+
+             document.getElementById('photo_gallery').src = "image/W5.jpeg";
+         }
+         if (c % 30 == 5) {
+
+             document.getElementById('photo_gallery').src = "image/W6.jpeg";
+         }
+
+
+         if (c % 30 == 6) {
+
+             document.getElementById('photo_gallery').src = "image/W7.png";
+         }
+
+         if (c % 30 == 7) {
+
+             document.getElementById('photo_gallery').src = "image/W8.jpg";
+         }
+
+
+         if (c % 30 == 8) {
+
+             document.getElementById('photo_gallery').src = "image/W1.jpeg";
+         }
+
+
+         if (c % 30 == 9) {
+
+             document.getElementById('photo_gallery').src = "image/W2.jpeg";
+         }
+
+         if (c % 30 == 10) {
+
+             document.getElementById('photo_gallery').src = "image/W3.jpeg";
+         }
+
+         if (c % 30 == 11) {
+
+             document.getElementById('photo_gallery').src = "image/W4.jpeg";
+         }
+
+         if (c % 30 == 12) {
+
+             document.getElementById('photo_gallery').src = "image/W5.jpeg";
+         }
+
+
+         if (c % 30 == 13) {
+
+             document.getElementById('photo_gallery').src = "image/W6.jpeg";
+         }
+
+
+         if (c % 30 == 14) {
+
+             document.getElementById('photo_gallery').src = "image/W7.png";
+         }
+
+         if (c % 30 == 15) {
+
+             document.getElementById('photo_gallery').src = "image/W8.jpg";
+         }
+
+         if (c % 30 == 16) {
+
+             document.getElementById('photo_gallery').src = "image/W1.jpeg";
+         }
+         if (c % 30 == 17) {
+
+             document.getElementById('photo_gallery').src = "image/W2.jpeg";
+         }
+         if (c % 30 == 18) {
+
+             document.getElementById('photo_gallery').src = "image/W3.jpeg";
+         }
+         if (c % 30 == 19) {
+
+             document.getElementById('photo_gallery').src = "image/W4.jpeg";
+         }
+         if (c % 30 == 20) {
+
+             document.getElementById('photo_gallery').src = "image/W5.jpeg";
+         }
+         if (c % 30 == 21) {
+
+             document.getElementById('photo_gallery').src = "image/W11.jpeg";
+         }
+         if (c % 30 == 22) {
+
+             document.getElementById('photo_gallery').src = "image/W6.jpeg";
+         }
+         if (c % 30 == 23) {
+
+             document.getElementById('photo_gallery').src = "image/W9.jpeg";
+         }
+         if (c % 30 == 24) {
+
+             document.getElementById('photo_gallery').src = "image/W10.jpeg";
+             if (c % 30 == 25) {
+
+                 document.getElementById('photo_gallery').src = "image/W11.jpeg";
+             }
+
+
+             if (c % 30 == 26) {
+
+                 document.getElementById('photo_gallery').src = "image/W2.jpeg";
+             }
+             if (c % 30 == 27) {
+
+                 document.getElementById('photo_gallery').src = "image/W9.jpeg";
+                 if (c % 30 == 28) {
+
+                     document.getElementById('photo_gallery').src = "image/W8.jpeg";
+                 }
+                 if (c % 30 == 29) {
+
+                     document.getElementById('photo_gallery').src = "image/W10.jpeg";
+                 }
+                 if (c % 30 == 30) {
+
+                     document.getElementById('photo_gallery').src = "image/W11.jpeg";
+                 }
+             }
+         }
+         c = c + 1;
+         s = setTimeout("photoGallery()", 3000)
+
+
+     }
+
+     function Getfunction() {
+         photoGallery();
+         setInterval('blinkIt()', 1500);
+     }
+
+     function blinkIt() {
+
+         if (!document.all) return;
+
+         else {
+             for (i = 0; i < document.all.tags('blink').length; i++) {
+                 s = document.all.tags('blink')[i];
+                 s.style.visibility = (s.style.visibility == 'visible') ? 'hidden' : 'visible';
+             }
+         }
+     }
+
+
+
+
+
+</script>
+  <meta charset="utf-8">
+  <title>DASHBOARD </title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+      <style type="text/css">
+      body,td,th {
+	font-family: Roboto, sans-serif;
+}
+a:link {
+	text-decoration: none;
+	color: #666;	
+}
+a:visited {
+	text-decoration: none;
+	
+}
+a:hover {
+	text-decoration: none;
+	color: #FFF;	
+}
+a:active {
+	text-decoration: none;
+	
+}
+      body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+          #photo_gallery
+          {
+              height: 266px;
+              width: 493px;
+          }
+      </style>
+</head>
+
+<body onload ="Getfunction()" class ="body"  >
+  <table width="89%" border="0" align="center" cellpadding="0" cellspacing="0"  class ="gradientGreen">
+   
+   <br />
+     <tr>
+       <td aliugn="left" valign ="top">
+       <img src="image/PETHeader.png" style="height: 145px; width: 90%" >
+       </td>
+       </tr>
+    <tr>
+    <td>
+  <table>
+  
+  <tr>
+  <td>
+  
+  <table>
+   <tr>
+                 
+              
+                  <td align="center">
+                  <font color="White" ><b> <i> Last Updated Date : 22/07/2025
+                 
+                 
+               </i>  </b></font>
+               <br />
+
+                <a href="https://www.petitforestier.com/en-ae/about-petit-forestier" target="_blank">  
+                <font color="White" ><b> <i> Click here to view Website </i></b></font> </a>
+                  </td>
+                  </tr>
+  
+  <td align="left" valign ="top">
+   
+          <table  cellpadding ="5" cellspacing ="5">
+           
+              <tr>
+                  
+
+                   <td align="left" valign ="top">
+                        <table border="0" cellpadding="4" cellspacing="4" 
+                      class="tablebg">
+
+                      <tr>
+                      <td>
+                 <span class ="text1"> <font color="darkgreen" >FLEET GENERAL</font></span>
+                      </td>
+                      </tr>
+                <tr>
+                    <td background="image/sidebar_bg.gif"><div class="swanky_wrapper" >
+          <label for='Dashboard'> <img src="image/Vision.png" alt=""><b> <span><a href="SupportedFile/PETITVision.pdf" target ="_blank" >Vision</a></span> </label>
+          <label for='Sales'> <img src="image/Mission.png" alt=""> <span><a href="SupportedFile/PETITMission.pdf" target ="_blank">Mission</a></span> </label>
+          <label for='Messages'> <img  src="image/workspace_icon.png" alt=""> <span><a href="SupportedFile/PETITObjectives.pdf" target ="_blank">Quality Objectives</a></span> </label>
+          <label for='Users'> <img src="image/Organization.png" alt=""> <span><a href="SupportedFile/PETITOrganizationChart.pdf" target ="_blank">Fleet Organization Chart</a></span> </label>
+        
+           <label for='Dashboard'> <img src="image/FleetPlan.png" alt=""> <span><a href="SupportedFile/PetIitImprovement Plan.pdf" target ="_blank">Improvement Plan </a></span> </label>
+          <label for='Sales'> <img src="image/permittedLeave_icon.png" alt=""> <span><a href="SupportedFile/PETITScoreCard.pdf" target ="_blank">ScoreCard</a></span> </label>
+          <label for='Messages'> <img  src="image/workspace_icon.png" alt=""> <span><a href="SupportedFile/FleetCostControl.pdf" target ="_blank">Fleet Cost Control Aspects</a></span> </label></b>
+         
+         
+         
+         
+        </div></td>
+                  
+                </tr>
+               
+                             
+                </table></td>
+                  <td align="left" valign ="top" colspan ="2" ="500">
+
+                  <table width ="500">
+
+                   
+         
+                  <tr>
+                <td background="image/sidebar_bg.gif">
+                   <table  width ="500">
+                   <tr>
+                   <td>
+                    <img src="image/PetHead1.png" id="photo_gallery" />
+                   </td>
+                   </tr>
+                     <tr>
+                 <td background="image/sidebar_bg.gif" align ="center" >
+                  <marquee  style="font-family: Book Antiqua; background-color:lightgreen  ; font-size :larger ; font-weight :bold ;  color:Blue " direction="up" height="80"  scrollamount="2">
+              
+                                                "*********Refrigeration You can Trust**********"
+               <br /> <br />
+                  </marquee>
+                  </td>
+                  </tr>
+                   </table>
+
+                    
+                  </td>
+                  </tr>
+                
+                  </table>
+               
+                      </td>
+                      
+                 
+                  <td align="left" valign ="top">
+                        <table border="0" cellpadding="4" cellspacing="4" 
+                      class="tablebg">
+                        <tr>
+                      <td>
+                 <span class ="text1"> <font color="darkgreen" >FLEET ASSET</font></span>
+                      </td>
+                      </tr>
+                <tr>
+                    <td background="image/sidebar_bg.gif"><div class="swanky_wrapper" >
+          <label for='Dashboard'> <img src="image/dash.png" alt=""><b> <span><a href="SupportedFile/PETITVehicleStatus.pdf" target ="_blank">Vehicle Status</a></span> </label>
+          <label for='Sales'> <img src="image/permittedLeave_icon.png" alt=""> <span><a href="SupportedFile/FridgeStatus.pdf" target ="_blank">Fridge Status</a></span> </label>
+          <label for='Messages'> <img  src="image/workspace_icon.png" alt=""> <span><a href="SupportedFile/ForkliftStatus.pdf" target ="_blank">Forklift Status</a></span> </label>
+          <label for='Users'> <img src="image/epocket_icon.png" alt=""> <span><a href="SupportedFile/ToolsandEquipments.pdf" target ="_blank">Tools and Equipments</a></span> </label>
+          <label for='Settings'> <img src="image/performance_icon.png" alt=""> <span><a href="SupportedFile/VehicleAccidents.pdf" target ="_blank">Vehicle Accidents</a></span> </label>
+           <label for='Dashboard'> <img src="image/dash.png" alt=""> <span><a href="SupportedFile/TyreMonitor.pdf" target ="_blank">Tyre Monitor</a></span> </label>
+          <label for='Sales'> <img src="image/permittedLeave_icon.png" alt=""> <span><a href="SupportedFile/RegistrationSchedule.pdf" target ="_blank">Registration Schedule</a></span> </label>
+          <label for='Messages'> <img  src="image/FleetPlan.png" alt=""> <span><a href="SupportedFile/FuelCardSchedule.pdf" target ="_blank">FuelCardSchedule</a></span> </label></b>
+         
+         
+         
+         
+        </div></td>
+                  
+                </tr>
+               
+                <tr>
+                    <td background="image/sidebar_bg.gif">&nbsp;</td>
+                  
+                </tr>
+               
+                </table></td>
+               
+              </tr>
+            
+              </table>
+      
+   
+      
+     </td>
+
+    
+     </tr>
+
+     <tr>
+     <td>
+       <table  cellpadding ="10" cellspacing ="10">
+        <tr>
+                   <td align="left" valign ="top">
+                        <td align="left" valign ="top">
+                        <table border="0" cellpadding="4" cellspacing="4" 
+                      class="tablebg">
+                        <tr>
+                      <td>
+                 <span class ="text1"> <font color="darkgreen" >TRAINING & DEVELOPMENT</font></span>
+                      </td>
+                      </tr>
+                <tr>
+                    <td background="image/sidebar_bg.gif"><div class="swanky_wrapper" >
+          <label for='Dashboard'> <img src="image/Learning_icon.png" alt=""> <b> <span><a href="SupportedFile/TrainingPlan.pdf">Training Plan</a></span> </label>
+          <label for='Sales'> <img src="image/profile_icon.png" alt=""> <span><a href="SupportedFile/StaffITP.pdf">Staff ITP</a></span> </label>
+          <label for='Messages'> <img  src="image/workspace_icon.png" alt=""> <span><a href="SupportedFile/JobDescription.pdf">Job Description</a></span> </label>
+          <label for='Users'> <img src="image/epocket_icon.png" alt=""> <span><a href="SupportedFile/InternalTrainings.pdf">Internal Trainings</a></span> </label>
+          <label for='Settings'> <img src="image/Learning_icon.png" alt=""> <span><a href="SupportedFile/ExternalTrainings.pdf">External Trainings</a></span> </label>
+           <label for='Dashboard'> <img src="image/profile_icon.png" alt=""> <span><a href="SupportedFile/EmployeeOfTheMonth.pdf">Employee Of The Month</a></span> </label>
+          <label for='Sales'> <img src="image/profile_icon.png" alt=""> <span><a href="SupportedFile/Promotions.pdf">Promotions</a></span> </label></b>
+         
+         
+         
+         
+         
+        </div></td>
+                  
+                </tr>
+               
+                <tr>
+                    <td background="image/sidebar_bg.gif">&nbsp;</td>
+                  
+                </tr>
+               
+                </table></td></td>
+                   <td align="left" valign ="top">
+                        <table border="0" cellpadding="4" cellspacing="4" 
+                      class="tablebg">
+                        <tr>
+                      <td>
+                 <span class ="text1"> <font color="darkgreen" >KEY PERFORMANCE IND I</font></span>
+                      </td>
+                      </tr>
+                <tr>
+                    <td background="image/sidebar_bg.gif"><div class="swanky_wrapper" >
+          <label for='Dashboard'> <img src="image/policy_icon.png" alt=""><b> <span><a href="SupportedFile/FleetServices.pdf">Fleet Servics</a></span></label>
+          <label for='Sales'> <img src="image/policy_icon.png" alt=""> <span><a href="SupportedFile/Repair&Maintenance.pdf">Repair & Maintenance </a></span></label>
+          <label for='Messages'><img  src="image/policy_icon.png" alt="">  <span><a href="SupportedFile/StaffProductivity.pdf">Staff Productivity </a></span></label>
+          <label for='Users'> <img src="image/policy_icon.png" alt=""> <span><a href="SupportedFile/SAPPRRelease.pdf">SAP PR Release </a></span></label>
+          <label for='Settings'>   <img src="image/policy_icon.png" alt=""> <span><a href="SupportedFile/VanAudit-Cooling.pdf">Van Audit- Cooling </a></span></label>
+       
+          <label for='Sales'> <img src="image/policy_icon.png" alt=""> <span><a href="SupportedFile/StockNon-Moving.pdf">Stock Non Moving</a></span> </label>
+          <label for='Messages'> <img  src="image/policy_icon.png" alt=""> <span><a href="SupportedFile/VehicleCount.pdf">Vehicle Count</a></span> </label></b>
+         
+         
+         
+         
+        </div></td>
+                  
+                </tr>
+               
+                <tr>
+                    <td background="image/sidebar_bg.gif">&nbsp;</td>
+                  
+                </tr>
+               
+                </table></td>
+                  <td align="left" valign ="top">
+                        <table border="0" cellpadding="4" cellspacing="4" 
+                      class="tablebg">
+                        <tr>
+                      <td>
+                 <span class ="text1"> <font color="darkgreen" >KEY PERFORMANCE IND II</font></span>
+                      </td>
+                      </tr>
+                <tr>
+                    <td background="image/sidebar_bg.gif"><div class="swanky_wrapper" >
+          <label for='Dashboard'> <img src="image/policy_icon.png" alt=""><b> <span><a href="SupportedFile/KMPLSalesVan.pdf">KMPL Sales Van</a></span> </label>
+          <label for='Sales'> <img src="image/policy_icon.png" alt=""> <span><a href="SupportedFile/KMPLCars.pdf">KMPL Cars</a></span> </label>
+          <label for='Messages'> <img  src="image/policy_icon.png" alt=""> <span><a href="SupportedFile/FleetAudit.pdf">Fleet Audit</a></span> </label>
+          <label for='Users'> <img src="image/policy_icon.png" alt=""> <span><a href="SupportedFile/FleetLossPrevention.pdf">Fleet Loss Prevention</a></span> </label>
+          <label for='Settings'> <img src="image/policy_icon.png" alt=""> <span><a href="SupportedFile/WSStockActivities.pdf">WS Stock Activities</a></span> </label>
+           <label for='Dashboard'> <img src="image/policy_icon.png" alt=""> <span><a href="SupportedFile/AccidentCostandTimeFrame.pdf">Accident Cost and Time Frame</a></span> </label>
+          <label for='Sales'> <img src="image/policy_icon.png" alt=""> <span><a href="SupportedFile/RegistrationRenewal.pdf">Registration Renewal</a></span> </label>
+          <label for='Messages'> <img  src="image/policy_icon.png" alt=""> <span><a href="SupportedFile/VehicleRouteLength.pdf">Vehicle Route Length</a></span> </label>
+           
+         
+         
+         
+         
+        </div></td>
+                  
+                </tr>
+               
+                <tr>
+                    <td background="image/sidebar_bg.gif">&nbsp;</td>
+                  
+                </tr>
+               
+                </table></td>
+                  <td align="left" valign ="top">
+                        <table border="0" cellpadding="4" cellspacing="4" 
+                      class="tablebg">
+
+                      <tr>
+                      <td>
+                 <span class ="text1"> <font color="darkgreen" >Forms & Templates</font></span>
+                      </td>
+                      </tr>
+                <tr>
+                    <td background="image/sidebar_bg.gif"><div class="swanky_wrapper" >
+          <label for='Dashboard'> <img src="image/forms.jpg" alt=""><b> <span><a href="SupportedFile/FleetAuditForm.pdf">Fleet Audit Form</a></span> </label>
+          <label for='Sales'> <img src="image/forms.jpg" alt=""> <span><a href="SupportedFile/AccidentPanelAction.pdf">Accident Panel Action</a></span> </label>
+          <label for='Messages'> <img  src="image/forms.jpg" alt=""> <span><a href="SupportedFile/EOTM.pdf">EOTM</a></span> </label>
+          <label for='Users'> <img src="image/forms.jpg" alt=""> <span><a href="SupportedFile/FleetAuditCheckList.pdf">Fleet Audit CheckList</a></span> </label>
+          <label for='Settings'> <img src="image/forms.jpg" alt=""> <span><a href="SupportedFile/FleetDamage.pdf">Fleet Damage</a></span> </label>
+           <label for='Dashboard'> <img src="image/forms.jpg" alt=""> <span><a href="SupportedFile/StaffTrafficViolation.pdf">Staff Traffic Violation </a></span> </label>
+          <label for='Sales'> <img src="image/forms.jpg" alt=""> <span><a href="SupportedFile/PerformanceAppraisal.pdf">Performance Appraisal</a></span> </label>
+          <label for='Messages'> <img  src="image/forms.jpg" alt=""> <span><a href="SupportedFile/Form(1).pdf">Form1</a></span> </label>
+           <label for='Dashboard'> <img src="image/forms.jpg" alt=""><b> <span><a href="SupportedFile/Form(2).pdf">Form2</a></span> </label>
+       
+         
+          </b>
+
+         
+         
+         
+         
+        </div></td>
+                  
+                </tr>
+               
+                <tr>
+                    <td background="image/sidebar_bg.gif">&nbsp;</td>
+                  
+                </tr>
+               
+                </table></td>
+              </tr>
+      </table>
+     </td>
+     </tr>
+     </table>
+       </td>
+ 
+  </tr>
+  </table>
+    
+    </td>
+    </tr>
+     </table> 
+</body>
+</html>
